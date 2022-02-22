@@ -7,10 +7,20 @@ export default function Main() {
     <section>
 
       { 
-        moviesArr.map( (element) => {
-          return <Movie title={element.title} year={element.year} rating={element.rating} imgURL={element.imgURL} />
+        moviesArr.map( (element, index) => {
+          return (
+            <Movie 
+              key={element.id} 
+              title={element.title} 
+              year={element.year} 
+              rating={element.rating} 
+              imgURL={element.imgURL} 
+            />
+          )
         })
       }
+
+
 
     </section>
   )
