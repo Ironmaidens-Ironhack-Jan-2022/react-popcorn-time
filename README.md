@@ -8,20 +8,20 @@ React Codealong.
 - [x] Add movies.json
 -     Create a <Movie /> component (displays "title" + "year")
 -     Render 3x <Movie /> passing information as we've done it before 
-- [ ] Import movies.json & iterate through array of movies
+- [x] Import movies.json & iterate through array of movies
       - key=""
 - [ ] 
 - [ ] 
 - [ ] 
 
-# Goal
+## Goal
 
 Learning React
 - state hook and events
 - list & keys
 - conditional rendering
 
-In the project directory, you can run:
+## In the project directory, you can run:
 
 ### `npm start`
 
