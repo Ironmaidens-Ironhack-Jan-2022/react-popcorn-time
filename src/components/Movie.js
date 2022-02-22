@@ -15,10 +15,15 @@ export default function Movie(props) {
         <h2>{props.title}</h2>
 
         {/* ---- CONDITIONAL RENDERING WITH TERNARY OPERATOR --- */}
-        {
+        {/* {
           props.imgURL 
           ? <img src={props.imgURL} alt={props.title} />
           : <img src="https://via.placeholder.com/182x268" alt="" />
+        } */}
+
+
+        {
+          props.imgURL && <img src={props.imgURL} alt={props.title} />
         }
 
         <p>
@@ -28,3 +33,4 @@ export default function Movie(props) {
     </div>
   )
 }
+
