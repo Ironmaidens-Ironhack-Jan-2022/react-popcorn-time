@@ -8,10 +8,10 @@ export default function Main() {
 
       { 
         moviesArr.map( (element) => {
-          return <Movie title={element.title} year={element.year} rating={element.rating} />
+          return <Movie title={element.title} year={element.year} rating={element.rating} imgURL={element.imgURL} />
         })
       }
-  
+
     </section>
   )
 }
