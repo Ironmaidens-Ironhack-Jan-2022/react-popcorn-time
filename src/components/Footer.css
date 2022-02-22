@@ -1,0 +1,9 @@
+.Footer {
+    background-color: rgb(249, 249, 150);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.Footer p {
+    font-style: italic;
+}

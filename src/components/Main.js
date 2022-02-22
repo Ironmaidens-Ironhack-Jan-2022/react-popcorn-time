@@ -1,13 +1,29 @@
+import { useState } from "react";
 import moviesArr from "../data/movies.json";
+import "./Main.css"
 import Movie from "./Movie";
 
 export default function Main() {
 
+  const [movies, setMovies] = useState(moviesArr);
+
+  const displayTopRated = () => {
+    const newList = movies.filter( (element) => {
+      return element.rating >= 9
+    });
+    setMovies(newList);
+  }
+
   return (
-    <section>
+    <section className="Main">
+
+      <div className="controls">
+        <h3>Filters:</h3>
+        <button onClick={ displayTopRated } >Only Top Rated</button>
+      </div>
 
       { 
-        moviesArr.map( (element, index) => {
+        movies.map( (element, index) => {
           return (
             <Movie 
               key={element.id} 
@@ -19,9 +35,6 @@ export default function Main() {
           )
         })
       }
-
-
-
     </section>
   )
 }
