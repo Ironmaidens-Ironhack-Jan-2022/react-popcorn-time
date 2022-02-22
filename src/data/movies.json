@@ -22,8 +22,6 @@
         "title": "Gladiator",
         "year": 2000,
         "genres": ["Action", "Adventure", "Drama"],
-        "imgURL":
-            "https://m.media-amazon.com/images/M/MV5BMDliMmNhNDEtODUyOS00MjNlLTgxODEtN2U3NzIxMGVkZTA1L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg",
         "rating": 6
     },
     {
@@ -33,7 +31,7 @@
         "genres": ["Comedy", "Romance"],
         "imgURL":
             "https://m.media-amazon.com/images/M/MV5BNDg4NjM1YjMtYmNhZC00MjM0LWFiZmYtNGY1YjA3MzZmODc5XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_UX182_CR0,0,182,268_AL_.jpg",
-        "rating": 9
+        "rating": 10
     },
     {
         "id": 5,
