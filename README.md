@@ -1,11 +1,25 @@
+# Popcorn Time
+
+React Codealong.
+
+## Steps
+
+- [x] Initial setup with CRA
+- [x] Add movies.json
+-     Create a <Movie /> component (displays "title" + "year")
+-     Render 3x <Movie /> passing information as we've done it before 
+- [ ] Import movies.json & iterate through array of movies
+      - key=""
+- [ ] 
+- [ ] 
+- [ ] 
+
 # Goal
 
 Learning React
 - state hook and events
 - list & keys
 - conditional rendering
-
-## Available Scripts
 
 In the project directory, you can run:
 
