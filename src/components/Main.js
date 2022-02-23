@@ -22,6 +22,9 @@ export default function Main() {
         <button onClick={ displayTopRated } >Only Top Rated</button>
       </div>
 
+
+      <h2>There are {movies.length} movies that meet your criteria</h2>
+
       { 
         movies.map( (element, index) => {
           return (
