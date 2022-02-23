@@ -5,7 +5,7 @@ export default function Header(props) {
     <header className="Header">
       <h1>Popcorn Time!</h1>
 
-      <h2>There are {props.moviesArr.length} movies that meet your criteria</h2>
+      <h2>There are {props.numberOfMovies} movies that meet your criteria</h2>
     </header>
   )
 }

@@ -18,7 +18,7 @@ Learning React
 -     Render 3x <Movie /> passing information as we've done it before 
 - [x] Import movies.json & iterate through array of movies
       - key=""
-- [ ] 
+- [x] display number of movies in the header (Lifting state up)
 - [ ] 
 - [ ] 
 
