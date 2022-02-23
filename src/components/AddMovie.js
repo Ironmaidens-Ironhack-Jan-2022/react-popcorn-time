@@ -3,17 +3,21 @@ import "./AddMovie.css"
 
 function AddMovie(props) {
 
-  const [titleInput, setTitleInput] = useState("");
-  const [yearInput, setYearInput] = useState(2000);
-  const [ratingInput, setRatingInput] = useState("");
+  const [inputs, setInputs] = useState(
+    {
+      title: "",
+      year: 2000,
+      rating: "",
+    }
+  );
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     const newMovie = {
-      title: titleInput,
-      year: yearInput,
-      rating: ratingInput
+      title: inputs.title,
+      year: inputs.year,
+      rating: inputs.rating
     }
 
     props.createMovie(newMovie);
@@ -22,38 +26,31 @@ function AddMovie(props) {
   }
 
   const clearForm = () => {
-    setTitleInput("");
-    setYearInput(2000);
-    setRatingInput("");
+    setInputs({
+      title: "",
+      year: 2000,
+      rating: "",
+    });
   }
 
 
   // Extra: improve code, handling all in one single method 
   // https://stackoverflow.com/a/67234242/11298742
 
-  const handleTitleInput = (e) => {
-    setTitleInput(e.target.value);
+  const handleInputChange = (e) => {    
+    setInputs( (prevState) => ({...prevState, [e.target.name]: e.target.value }));
   }
-
-  const handleYearInput = (e) => {
-    setYearInput(e.target.value);
-  }
-
-  const handleRatingInput = (e) => {
-    setRatingInput(e.target.value);
-  } 
-
 
   return (
     <div className="AddMovie">
       <form onSubmit={handleSubmit}>
 
         <label>Title:
-          <input type="text" name="title" value={titleInput} onChange={handleTitleInput} />
+          <input type="text" name="title" value={inputs.title} onChange={handleInputChange} />
         </label>
 
         <label>Year:
-          <input type="number" name="year" value={yearInput} onChange={handleYearInput} />
+          <input type="number" name="year" value={inputs.year} onChange={handleInputChange} />
         </label>
 
         <label>Rating:
@@ -62,8 +59,8 @@ function AddMovie(props) {
             min={1}
             max={10}
             name="rating"
-            value={ratingInput}
-            onChange={handleRatingInput}
+            value={inputs.rating}
+            onChange={handleInputChange}
           />
         </label>
 
