@@ -19,7 +19,7 @@ Learning React
 - [x] Import movies.json & iterate through array of movies
       - key=""
 - [x] display number of movies in the header (Lifting state up)
-- [ ] 
+- [x] extract Controls to a specific component (communication child-parent, now we need to pass a callback to the child component)
 - [ ] 
 
 ## In the project directory, you can run:
