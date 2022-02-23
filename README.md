@@ -2,6 +2,14 @@
 
 React Codealong.
 
+## Goal
+
+Learning React
+- state hook and events
+- list & keys
+- conditional rendering
+- lifting state up
+
 ## Steps
 
 - [x] Initial setup with CRA
@@ -13,13 +21,6 @@ React Codealong.
 - [ ] 
 - [ ] 
 - [ ] 
-
-## Goal
-
-Learning React
-- state hook and events
-- list & keys
-- conditional rendering
 
 ## In the project directory, you can run:
 
